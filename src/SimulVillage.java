@@ -28,8 +28,15 @@ public class SimulVillage {
 				cf++;
 			}
 		}
+
 		((Homme) population.elementAt(0)).setMetier(liMetier.lastElement());
-		
-		
+
+		Vector<Integer> tab = Alea.alea(tailleInit, tailleInit);
+		while (tab.size() > 0 && tab.size() != 3) {
+			Humain hu1 = population.elementAt(tab.elementAt(0));
+			Humain hu2 = population.elementAt(tab.elementAt(1));
+
+		}
+
 	}
 }

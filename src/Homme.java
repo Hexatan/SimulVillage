@@ -3,6 +3,7 @@ import java.util.Random;
 public class Homme extends Humain {
 	private Metier metier;
 	private int argent;
+	private Femme femme;
 
 	public Homme(Homme h) {
 		super(h);

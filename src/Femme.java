@@ -3,6 +3,7 @@ import java.util.Random;
 public class Femme extends Humain {
 	private int fertilite;
 	private int nbBebe;
+	private Homme mari;
 
 	public Femme(Femme h) {
 		super(h);
@@ -19,22 +20,6 @@ public class Femme extends Humain {
 	public Femme(int poids, String nom, int age, int espv, int fertilite) {
 		super(poids, nom, age, espv);
 		this.fertilite = fertilite;
-	}
-
-	public int getFertilite() {
-		return fertilite;
-	}
-
-	public void setFertilite(int fertilite) {
-		this.fertilite = fertilite;
-	}
-
-	public int getNbBebe() {
-		return nbBebe;
-	}
-
-	public void setNbBebe(int nbBebe) {
-		this.nbBebe += nbBebe;
 	}
 
 	public void vieillir() {
@@ -69,5 +54,21 @@ public class Femme extends Humain {
 		} else
 			return null;
 		return b;
+	}
+
+	public int getFertilite() {
+		return fertilite;
+	}
+
+	public void setFertilite(int fertilite) {
+		this.fertilite = fertilite;
+	}
+
+	public int getNbBebe() {
+		return nbBebe;
+	}
+
+	public void setNbBebe(int nbBebe) {
+		this.nbBebe += nbBebe;
 	}
 }
